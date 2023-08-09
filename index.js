@@ -4,7 +4,7 @@ app.get("/", (req, res) => {
     res.status(200).send("Hello World 🚀")
 })
 
-app.get("/afterChange", (req, res) => {
+app.get("/after", (req, res) => {
     res.status(200).send("Hello World AfterChange 🚀")
 })
 app.listen(process.env.PORT || 3000, () => {
