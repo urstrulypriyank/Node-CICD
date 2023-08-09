@@ -11,5 +11,7 @@ jobs:
         run: npm install
       - name: checking node version
         run: node -v
+      - name: pm2 to restart server
+        run: pm2 restart index.js
       - name: Finish the project
         run: echo "Finished"
