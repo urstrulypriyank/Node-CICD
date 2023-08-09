@@ -1,10 +1,10 @@
 const app = require("express")();
 
-app.get("/", (req, res) => {
+app.get("/api/hello", (req, res) => {
     res.status(200).send("Hello World after update 🚀")
 })
 
-app.get("/home", (req, res) => {
+app.get("/api/home", (req, res) => {
     res.status(200).send("Hi there")
 })
 
