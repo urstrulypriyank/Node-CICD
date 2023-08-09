@@ -7,6 +7,6 @@ app.get("/", (req, res) => {
 app.get("/home", (req, res) => {
     res.status(200).send("Hello World from home 🚀")
 })
-app.listen(process.env.PORT || 3000, () => {
-    console.log('🖥 server running on http://localhost:' + (process.env.PORT || 3000))
+app.listen(3000, () => {
+    console.log('🖥 server running on http://localhost:' + 3000)
 })
