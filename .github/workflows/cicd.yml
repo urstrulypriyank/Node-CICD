@@ -1,0 +1,15 @@
+#this is the first workflow file and will contain jobs to run
+name: "First CI  WORKFLOW"
+on: [push]
+jobs:
+  build-apps:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - name: install dependecies from package
+        run: npm install
+      - name: checking node version
+        run: node -v
+      - name: Finish the project
+        run: echo "Finished"
